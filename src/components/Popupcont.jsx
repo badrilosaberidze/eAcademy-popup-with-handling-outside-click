@@ -23,7 +23,7 @@ const Popupcont = () => {
   });
 
   return (
-    <div className="popup-container">
+    <div className={`${popupStatus ? "popup-background" : "popup-container"}`}>
       <button
         onClick={() => {
           setPopupStatus(true);
